@@ -3,7 +3,7 @@ namespace app\controller;
 class home
 {
 	function __construct(){
-		$db = new \app\model\model('home');//connect to database 'home' 
+		//$db = new \app\model\model('home');//connect to database 'home' 
 	}
 
 	/* default function 'main'*/
