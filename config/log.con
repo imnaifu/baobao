@@ -1,0 +1,9 @@
+<?php
+//log config
+return array(
+	'log_type' => 'file', //or 'database'
+	'options' => array(
+		'log_path' => ROOT . '/log/daily'
+	)
+
+);
