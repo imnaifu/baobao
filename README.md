@@ -1,5 +1,5 @@
 # baobao
-An very tiny PHP framework    
+A very tiny PHP framework    
 
 ## Install
 `composer require imnaifu/baobao`
