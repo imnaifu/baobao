@@ -47,7 +47,8 @@ class baobao
 		}
 		else{
 			//find file accordingly
-			$file = str_replace('\\', '/', $class);
+			//2017-07-08 for unix system 
+			$file = str_replace('\\', '/', $class); 
 			$file = ROOT .'/' .$file . '.php';
 	        if (file_exists($file)) {
 				require_once($file);

@@ -66,4 +66,7 @@ function merge_sort(){
 
 }
 
+function merge(){
+	
+}
 
