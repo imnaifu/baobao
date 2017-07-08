@@ -5,10 +5,10 @@
 echo 123;
 echo dirname(dirname(__FILE__));
 // define('DS', DIRECTORY_SEPARATOR);
-// define('ROOT', dirname(dirname(__FILE__)));
+define('ROOT', dirname(dirname(__FILE__)));
 // define('PUBLIC', dirname(__FILE__));
 // define('DEBUG', true);
-// echo ROOT;
+echo ROOT;
 // echo PUBLIC;
 // echo DEBUG;
 exit;
