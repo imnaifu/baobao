@@ -7,6 +7,7 @@ define('ROOT', dirname(dirname(__FILE__)));
 define('PUBLIC_FOLDER', dirname(__FILE__));
 define('DEBUG', true);
 
+
 //for composer autoload
 include_once(ROOT.'/vendor/autoload.php');
 
