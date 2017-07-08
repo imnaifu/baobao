@@ -2,7 +2,7 @@
 
 /* Entrance */
 
-
+echo 123;
 // define('DS', DIRECTORY_SEPARATOR);
 define('ROOT', dirname(dirname(__FILE__)));
 define('PUBLIC', dirname(__FILE__));
