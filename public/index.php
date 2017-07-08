@@ -2,11 +2,11 @@
 
 /* Entrance */
 
+
 // define('DS', DIRECTORY_SEPARATOR);
 define('ROOT', dirname(dirname(__FILE__)));
-define('PUBLIC_FOLDER', dirname(__FILE__));
+define('PUBLIC', dirname(__FILE__));
 define('DEBUG', true);
-
 
 //for composer autoload
 include_once(ROOT.'/vendor/autoload.php');
@@ -23,7 +23,7 @@ else{
 
 require_once(ROOT.'/core/functions.php');
 require_once(ROOT.'/core/baobao.php');
-require_once(ROOT.'/../../autoload.php');
+
 //register a function which is called when the class can not found
 spl_autoload_register('\core\baobao::load');
 
