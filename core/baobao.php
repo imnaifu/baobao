@@ -42,7 +42,6 @@ class baobao
 	static public function load($class){
 		//auto load func
 		if (isset($registered_class[$class])){
-			echo '1231231';
 			return true;
 		}
 		else{

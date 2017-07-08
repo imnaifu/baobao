@@ -25,7 +25,7 @@ require_once(ROOT.'/core/functions.php');
 require_once(ROOT.'/core/baobao.php');
 
 //register a function which is called when the class can not found
-spl_autoload_register("\\core\\baobao::load");
+spl_autoload_register("\\core\\baobao::load4");
 
 
 //run the framework
