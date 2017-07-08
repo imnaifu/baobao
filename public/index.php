@@ -14,7 +14,7 @@ echo DEBUG;
 //for composer autoload
 include_once(ROOT.'/vendor/autoload.php');
 
-echo ROOT.'/vendor/autoload.php';
+echo ROOT.'/vendor/autoload.php';	
 if (DEBUG){
 	$whoops = new \Whoops\Run;
 	$whoops->pushHandler(new \Whoops\Handler\PrettyPageHandler);
