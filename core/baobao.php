@@ -47,10 +47,8 @@ class baobao
 		}
 		else{
 			//find file accordingly
-			echo $class;
-			$file = str_replace('/', '\\', $class);
-			$file = ROOT .'\\' .$file . '.php';
-	        echo $file;
+			$file = str_replace('\\', '/', $class);
+			$file = ROOT .'/' .$file . '.php';
 	        if (file_exists($file)) {
 				require_once($file);
 				self::$registered_class[$class] = 1;
