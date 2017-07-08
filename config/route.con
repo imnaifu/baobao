@@ -1,8 +1,0 @@
-<?php
-//route config
-return array(
-
-	'default_controller' => 'home',
-	'default_action' =>'main'
-
-);
