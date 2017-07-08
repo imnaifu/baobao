@@ -18,10 +18,10 @@ class baobao
 		self::remove_magicquotes();
 		self::unregister_globals();
 
-		$log = new library\log();
+		$log = new \core\library\log();
 		$log->start_daily_log();
 
-		$route = new library\route();
+		$route = new \core\library\route();
 		$controller = $route->controller;
 		$action = $route->action;
 
