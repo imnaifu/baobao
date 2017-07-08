@@ -3,14 +3,14 @@
 /* Entrance */
 
 echo 123;
-// define('DS', DIRECTORY_SEPARATOR);
-// define('ROOT', dirname(dirname(__FILE__)));
-// define('PUBLIC', dirname(__FILE__));
-// define('DEBUG', true);
-// echo ROOT;
-// echo PUBLIC;
-// echo DEBUG;
-
+define('DS', DIRECTORY_SEPARATOR);
+define('ROOT', dirname(dirname(__FILE__)));
+define('PUBLIC', dirname(__FILE__));
+define('DEBUG', true);
+echo ROOT;
+echo PUBLIC;
+echo DEBUG;
+exit;
 // //for composer autoload
 // include_once(ROOT.'/vendor/autoload.php');
 
