@@ -42,12 +42,15 @@ class baobao
 	static public function load($class){
 		//auto load func
 		if (isset($registered_class[$class])){
+			echo 1234;
 			return true;
 		}
 		else{
 			//find file accordingly
+			echo $class;
 			$file = str_replace('/', '\\', $class);
 			$file = ROOT .'\\' .$file . '.php';
+	        echo $file;
 	        if (file_exists($file)) {
 				require_once($file);
 				self::$registered_class[$class] = 1;
