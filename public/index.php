@@ -2,38 +2,33 @@
 
 /* Entrance */
 
-echo 123;
-echo dirname(dirname(__FILE__));
 // define('DS', DIRECTORY_SEPARATOR);
 define('ROOT', dirname(dirname(__FILE__)));
-// define('PUBLIC', dirname(__FILE__));
-// define('DEBUG', true);
-echo ROOT;
-// echo PUBLIC;
-// echo DEBUG;
-exit;
-// //for composer autoload
-// include_once(ROOT.'/vendor/autoload.php');
+define('PUBLIC_FOLDER', dirname(__FILE__));
+define('DEBUG', true);
 
-// echo ROOT.'/vendor/autoload.php';	
-// if (DEBUG){
-// 	$whoops = new \Whoops\Run;
-// 	$whoops->pushHandler(new \Whoops\Handler\PrettyPageHandler);
-// 	$whoops->register();
-// 	ini_set('display_error', 'On');
-// }
-// else{
-// 	ini_set('display_error', 'Off');
-// }
+//for composer autoload
+include_once(ROOT.'/vendor/autoload.php');
 
-// require_once(ROOT.'/core/functions.php');
-// require_once(ROOT.'/core/baobao.php');
-// require_once(ROOT.'/../../autoload.php');
-// //register a function which is called when the class can not found
-// spl_autoload_register('\core\baobao::load');
+echo ROOT.'/vendor/autoload.php';	
+if (DEBUG){
+	$whoops = new \Whoops\Run;
+	$whoops->pushHandler(new \Whoops\Handler\PrettyPageHandler);
+	$whoops->register();
+	ini_set('display_error', 'On');
+}
+else{
+	ini_set('display_error', 'Off');
+}
 
-// //run the framework
-// \core\baobao::run();
+require_once(ROOT.'/core/functions.php');
+require_once(ROOT.'/core/baobao.php');
+require_once(ROOT.'/../../autoload.php');
+//register a function which is called when the class can not found
+spl_autoload_register('\core\baobao::load');
+
+//run the framework
+\core\baobao::run();
 
 
 
