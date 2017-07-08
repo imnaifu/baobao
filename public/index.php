@@ -4,12 +4,12 @@
 
 echo 123;
 // define('DS', DIRECTORY_SEPARATOR);
-define('ROOT', dirname(dirname(__FILE__)));
+// define('ROOT', dirname(dirname(__FILE__)));
 // define('PUBLIC', dirname(__FILE__));
-define('DEBUG', true);
+// define('DEBUG', true);
 // echo ROOT;
-echo PUBLIC;
-echo DEBUG;
+// echo PUBLIC;
+// echo DEBUG;
 exit;
 // //for composer autoload
 // include_once(ROOT.'/vendor/autoload.php');
