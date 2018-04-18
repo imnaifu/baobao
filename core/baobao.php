@@ -28,6 +28,7 @@ class baobao
 		$controller_file = ROOT . "/app/controller/$controller.php";
 		$controller_class = "\\app\\controller\\$controller";
 
+		//auto load
 		if (is_file($controller_file)){
 			// $db = new \core\library\model($controller);//database
 			require_once($controller_file);
@@ -42,7 +43,6 @@ class baobao
 	static public function load($class){
 		//auto load func
 		if (isset($registered_class[$class])){
-			echo 1234;
 			return true;
 		}
 		else{
